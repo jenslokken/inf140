@@ -20,8 +20,10 @@ def tth(text):
                     temp.append(0)
             grid.append(temp)
             temp2 = [i for i in temp]
-            temp2.append(temp[0])
-            temp2 = temp2[1:]
+            id = i + 1
+            for k in range(i):
+                temp2.append(temp[k])
+            temp2 = temp2[id:]
             grid2.append(temp2)
         grid_list.append(grid)
         grid_list2.append(grid2)
